@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.top
+{
+    width: 100%;
+}
+
+.lbox
+{
+    width: 16.666%;
+    color: rgb(190, 190, 190);
+    float: left;
+    text-align: center;
+    padding: 10px;
+}
+
+.mbox
+{
+    position: relative;
+    overflow: hidden;
+    border: 1px black solid;
+    transition: 2s;
+}
+
+.mbox img
+{
+    width: 100%;
+}
+
+.sbox
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transform:translateX(100%) ;
+    transition: 2s ;
+}
+.lbox:hover .sbox
+{
+    transform: translateX(0%);
+}
+.lbox:hover .mbox
+{
+    transform: scale(1.1);
+    
+}
+.clearfix
+{
+    clear: both;
+}
+
+.bottom
+{
+    width: 90%;
+    padding-top: 100px;
+    margin-inline: auto;
+}
+.ibox
+{
+    width: 33.333%;
+    text-align: center;
+    position: relative;
+    float: left;
+    padding: 10px;
+}
+.iibox img
+{
+    width: 33.33%;
+    padding-top: 20px;
+}
+.iibox
+{
+    height: 50vh;
+    position: absolute;
+    top: 0px;
+    background-color: rgb(219, 219, 219);
+    transition: 2s;
+}
+.iibox:hover
+{
+     transform: translateY(-50px);
+}
+
+
+
+
+@media screen and (max-width:575px) {
+    .lbox{
+        width: 100%;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px) {
+    .lbox{
+        width: 50%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .lbox{
+        width: 33.3333%;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .lbox{
+        width: 20%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:575px) {
+    .ibox{
+        width: 100%;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px) {
+    .ibox{
+        width: 70%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .ibox{
+        width: 35%;
+    }
+}
+/* @media screen and (min-width:992px) and (max-width:1200px) {
+    .ibox{
+        width: 35%;
+    } */
+}
